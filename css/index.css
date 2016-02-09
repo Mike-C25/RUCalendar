@@ -1,0 +1,606 @@
+.apple {
+    color: #550000;
+    size: 20px;
+}
+
+#shortsentence {
+    color: #AA6C3;
+}
+
+body {
+    background-color: white;
+}
+
+.custnav {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.custnav ul {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    text-decoration: none;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.custnav li {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+.mylist .lbold {
+    font-weight: bold;
+    color: #D46A6A;
+}
+
+.mylist .lit {
+    font-style: italic;
+    color: #FFAAAA;
+}
+
+
+/* RUCALENDAR.HTML */
+
+
+/* First navbar CSS */
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+}
+
+.nostyle {
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 13px;
+}
+
+.menuone {
+    margin: auto;
+    padding: auto;
+    height: 50px;
+    position: fixed;
+}
+
+#navone li {
+    white-space: none;
+}
+
+.fontfix {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.dropm {
+    margin-top: 0px;
+    position: relative;
+    left: 25px;
+    top: 6px;
+}
+
+.dropm a {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.dropm .dropdown-menu {
+    left: 460px;
+    min-width: 80px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: .5px;
+}
+
+.dropm a:link {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.dropm a:active {
+    color: white;
+}
+
+.dropm a:focus,
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.dropm .dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: bold;
+    background-color: transparent;
+    line-height: 1.42857143;
+    white-space: nowrap;
+}
+
+.dropm .dropdown-menu>li>a:hover {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: bold;
+    background-color: transparent;
+    line-height: 1.42857143;
+    white-space: nowrap;
+}
+
+.navbar-brand {
+    float: left;
+    height: 27px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+a {
+    color: #9d9d9d;
+    text-decoration: none;
+}
+
+.navbar {
+    position: relative;
+    min-height: 29px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container>.navbar-header {
+    margin-right: -15px;
+    margin-left: 0px;
+}
+
+.caretu {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 1px;
+    vertical-align: middle;
+    border-top: 3px dashed;
+    border-top: 4px solid\9;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.firstbackfix {
+    background-color: transparent;
+}
+
+.firstbackfix a:hover {
+    background-color: transparent;
+}
+
+
+/* Second Navbar */
+
+.noborrad {
+    border-radius: 0px;
+}
+
+.navbarmarg {
+    margin: 0px;
+}
+
+.heightfix {
+    height: 66px;
+    background-color: #f2f2f2;
+    color: #f2f2f2;
+}
+
+.rulin {
+    background-color: #f2f2f2;
+}
+
+.inlin {
+    display: inline-block;
+}
+
+.rupos img {
+    margin-top: 1.5px;
+}
+
+.searchfix {
+    height: 27px;
+}
+
+.navbar-form {
+    padding-top: 0px;
+}
+
+.navbar-form .form-control {
+    display: inline-block;
+    width: 480px;
+    vertical-align: middle;
+}
+
+.custbtn {
+    width: 67px;
+    height: 27px;
+    background-color: #4394f1;
+    background-image: none;
+    border-color: #207ce6;
+}
+
+.custsearch {
+    color: white;
+}
+
+.rupos .btn-default:focus,
+.btn-default:hover {
+    background-color: #4394f1;
+    background-position: 0 -15px;
+}
+
+.rupos .btn-default:hover {
+    color: #333;
+    background-color: #4394f1;
+    border-color: #207ce6;
+}
+
+.rupos .btn {
+    border-radius: 2px;
+    font-size: 12.75px;
+}
+
+.glyphicon {
+    top: 0px;
+}
+
+.ruleft {
+    float: left;
+    color: grey;
+    font-style: normal;
+    margin: 22px -9px 0px 32px;
+    font-size: 12px;
+}
+
+.inlin p {
+    margin: 0 auto;
+    margin-top: -7px;
+}
+
+.rubell {
+    margin: 0px auto;
+    padding-top: 13px;
+    padding-left: 0px;
+    float: right;
+    color: grey;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.ruright {
+    color: grey;
+    font-style: normal;
+    margin: 22px -8px 0px 10px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.ruright .input-group-btn {
+    position: absolute;
+    padding-left: 65px;
+    margin-top: -15.5px;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.ruright p {
+    float: right;
+}
+
+.ruright .btn {
+    height: 27px;
+    width: 73px;
+}
+
+.ruright .glyphicon {
+    color: grey;
+    font-size: 12px;
+    margin-left: -3px;
+    padding-right: 5px;
+}
+
+.userpos {
+    left: 152px;
+    top: 11px;
+    color: #cddaf0;
+    background-color: #91addd;
+    font-size: 24px;
+    border-color: #b2bbcc;
+    border-style: solid;
+    border-width: thin;
+}
+
+
+/* 3rd row */
+
+.createpad {
+    padding-top: 7px;
+}
+
+.third {
+    border-style: solid;
+    border-width: thin;
+    border-color: gainsboro;
+    height: 47px;
+}
+
+.padremove {
+    padding: 0px;
+}
+
+.calcenter {
+    padding-top: 8px;
+}
+
+.calendarcontain {
+    padding-right: 276px;
+}
+
+.leftcal {
+    padding-left: 25px;
+}
+
+.leftcal p {
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 12px;
+    color: #2f4f4f;
+    font-weight: bold;
+}
+
+.leftcal h4 {
+    margin-top: 14px;
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.leftcal span {
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+.leftcal h4 {
+    color: #dd4b39;
+}
+
+.blockin div {
+    display: inline-block;
+}
+
+.datecolor p {
+    color: black;
+    padding-top: 6px;
+margin-left: -215px;
+}
+
+.datecolor p:hover {
+    color: black;
+}
+
+.rightcal p {
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 12px;
+    color: #2f4f4f;
+    font-weight: bold;
+}
+
+.blockin p {}
+
+.thirdinline {
+    display: inline-block;
+}
+
+.morefix {
+    width: 75px;
+}
+
+.settingset {
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.calbuttons {
+    margin: 0px auto;
+    padding: 0px;
+    height: 30px;
+    width: 65px;
+}
+
+.settingbutton {
+    padding-left: 15px;
+    width: 75px;
+    height: 30px;
+}
+
+.settingcaret {
+    margin-left: 1px;
+    margin-bottom: 4px;
+}
+
+.btn .caret {
+    margin-left: 3px;
+}
+
+.fourth .btn .caret {
+    margin-left: -3px;
+}
+
+.third .btn {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-image: -ms-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-image: -o-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+    border: 1px solid #dcdcdc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.pfloat {
+    float: right;
+    margin-top: -3px;
+}
+
+.stupidfp {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/*Random Spacer*/
+
+.spacer {
+    padding-top: 0px;
+    height: 5px;
+}
+
+
+/**/
+
+.leftcreate {
+    padding-left: 7px;
+    width: 58px;
+    height: 28px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 14px;
+    border-radius: 2px;
+}
+
+.rightcreate {
+    padding-left: 7px;
+    width: 20px;
+    height: 28px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 14px;
+    border-radius: 2px;
+}
+
+.minipad {
+    padding-top: 10px;
+}
+
+.minif p {
+    font-size: 10px;
+}
+
+.smini .col-md-6 {
+    height: 10px;
+}
+
+
+/* Grid time */
+
+.hfixg {
+    height: 40px;
+}
+
+.sdate {
+    background-color: #f2f2f2;
+}
+
+.stupidp p {
+    font-size: 12px;
+}
+
+.createfloat {
+    float: left;
+}
+
+
+/* Mini Calendar spot holder */
+
+.calendarfixed {
+    margin: 35px auto;
+    padding: 0px;
+    position: absolute;
+    height: 1000px;
+    width: 265px;
+}
+
+.temp {
+    position: fixed;
+    margin: -14px;
+}
+
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: left;        /* adjust as needed */
+    color: black;         /* adjust as needed */
+    background-color:transparent;
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    background-color:transparent;
+}
+
+.calendarfixed .panel-default > .panel-heading {
+    color: #333;
+    background-color: white;
+}
+
+.calendarfixed .panel-default > .panel-heading {
+    background-image: none;
+    background-repeat:none;
+    background-color:transparent;
+}
+
+.calendarfixed .panel-group .panel {
+    border: none;
+    border-radius: none;
+}
+
+.calendarfixed .panel {
+    margin-bottom: 20px;
+    background-color: #FFF;
+    border: 0px solid transparent;
+    border-radius:none ;
+    box-shadow:none ;
+}
+
+.calendarfixed .panel-group .panel-heading + .panel-collapse > .panel-body {
+    border-top: 0px solid #DDD;
+}
+
+.calendarfixed a:hover{
+    color:black;
+}
+
+.calendarfixed a:active{
+    text-decoration:none;
+}
+
+.calendarfixed .panel-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: inherit;
+    float:left;
+}

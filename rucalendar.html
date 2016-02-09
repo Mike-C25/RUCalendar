@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Rutgers University - Calendar</title>
+</head>
+
+<body>
+    <!---- First Navbar, Full black ---->
+    <nav id="navone" class="navbar navbar-default navbar-static-top navbar-inverse navbarmarg">
+        <div class="container-fluid">
+            <div class="navbar-header fontfix">
+                <a class="navbar-brand" href="#">+Andrew</a>
+                <a class="navbar-brand" href="#">Search</a>
+                <a class="navbar-brand" href="#">Images</a>
+                <a class="navbar-brand" href="#">Mail</a>
+                <a class="navbar-brand" href="#">Drive</a>
+                <a class="navbar-brand" href="#">Calendar</a>
+                <a class="navbar-brand" href="#">Sites</a>
+                <a class="navbar-brand" href="#">Group</a>
+                <a class="navbar-brand" href="#">Contacts</a>
+            </div>
+            <div class="dropm fontfix">
+                <ul class="fontfix">
+                    <li class="dropdown fontfix">
+                        <a class="dropdown-toggle brand fontfix" data-toggle="dropdown" href="#menu">More <span class="caret caretu"></span></a>
+                        <ul class="dropdown-menu navbar-inverse" role="menu" aria-labelledby="drop1">
+                            <li class="firstbackfix"><a class="navbar-brand fontfix" href="#">Photos</a></li>
+                            <li class="firstbackfix"><a class="navbar-brand fontfix" href="#">Apps</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--- Second Navbar (Rutgers Navbar) -->
+
+    <div class="container-fluid">
+        <div class="row rulin">
+
+            <div class="col-md-6">
+                <div class="rupos inlin">
+                    <img src="images/rulogo.png">
+                </div>
+                <div class="inlin">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control noborrad searchfix" placeholder="Search Calendar">
+
+                        </div>
+                        <button type="submit" class="btn btn-default custbtn"><span class="glyphicon glyphicon-search" style="color:white;" area-hidden="true"></span></button>
+                    </form>
+
+
+                </div>
+
+                <div class="col-md-6">
+
+
+                    <div class="inlin ruleft">
+                        <p>mc1340@scarletmail.rutgers.edu</p>
+                    </div>
+                    <div class="inlin rubell">
+                        <span class="glyphicon glyphicon-bell" area-hidden="true"></span>
+                    </div>
+                    <div class="inlin ruright">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" style="display:inline-block" ><span class="glyphicon glyphicon-plus"></span>Share</button>
+                        </span>
+                    </div>
+                    <div class="inlin rurightr">
+                        <span class="glyphicon glyphicon-user userpos"></span>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!--- MAIN MENU ENDS -->
+
+    <!-- CALENDAR NAVIGATION BAR -->
+
+    <div class="third">
+        <div class="row">
+            <div class="col-md-6 ">
+                <div class="leftcal">
+                    <div class="col-md-3 padremove">
+                        <h4>Calendar</h4>
+                    </div>
+                    <div class="col-md-5 calcenter">
+                        <div class="blockin">
+                            <button type="button" class="btn btn-default" aria-label="Left Align">
+                                <p>Today</p>
+                            </button>
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default "><span class="glyphicon glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+                                <button type="button" class="btn btn-default "><span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4 calcenter datecolor ">
+                        <p>Feb 7 - 13, 2016</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 ">
+                <div class="rightcal">
+                    <div class="col-md-7 calcenter padremove">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default calbuttons">
+                                <p>Day</p>
+                            </button>
+                            <button type="button" class="btn btn-default calbuttons">
+                                <p>Week</p>
+                            </button>
+                            <button type="button" class="btn btn-default calbuttons">
+                                <p>Month</p>
+                            </button>
+                            <button type="button" class="btn btn-default calbuttons">
+                                <p>4 Weeks</p>
+                            </button>
+                            <button type="button" class="btn btn-default calbuttons">
+                                <p>Agenda</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 morefix padremove moremarginfix calcenter">
+                        <div class="dropdown">
+                            <button class="btn btn-default calbuttons dropdown-toggle" type="button" data-toggle="dropdown">
+                                <p>More <span class="caret"></span></p>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Print</a></li>
+                                <li><a href="#">Refresh</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 calcenter">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle settingbutton" type="button" data-toggle="dropdown">
+                                <span class="settingset glyphicon glyphicon-cog "></span><span class="caret settingcaret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Display Density</a></li>
+                                <li><a href="#">Refresh</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---- First Row Grid ---->
+    <div class="calendarcontain ">
+        <div class="container-fluid">
+            <div class="fourth">
+                <div class="row">
+                    <div class="col-md-12 stupidfp createpad">
+                        <div class="row ">
+                            <div class="col-md-2">
+                                <div class="btn-group createfloat">
+                                    <button type="button" class="btn btn-danger leftcreate">CREATE</button>
+                                    <button type="button" class="btn btn-danger dropdown-toggle rightcreate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <p>Quick Action</p>
+                                        <form class="navbar-form navbar-left" role="search">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control noborrad searchfix" placeholder="">
+
+                                            </div>
+                                            <button type="submit" class="btn btn-default custbtn"><span class="glyphicon glyphicon-search" style="color:white;" area-hidden="true"></span></button>
+                                        </form>
+
+                                    </ul>
+                                </div>
+                                <!--Calendar starts here-->
+
+
+                                <div class="calendarfixed">
+
+                                    <!--Calendar -->
+
+                                    <!-- cal head -->
+                                    <div class="row">
+                                        <div class="panel-group" id="accordian">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                            September 2013
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseOne" class="panel-collapse collapse in">
+                                                    <div class="panel-body">
+                                                        Calendar
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- date start -->
+
+                                    <div class="row">
+                                        <div class="col-md-3">1</div>
+                                        <div class="col-md-3">2</div>
+                                        <div class="col-md-3">3</div>
+                                        <div class="col-md-3">4</div>
+                                    </div>
+
+
+
+
+
+
+                                    <!--My Calendars-->
+
+                                    <!-- Other Calendars -->
+
+                                </div>
+
+                                <!-- END CALENDAR(and extras) -->
+                            </div>
+                            <div class="col-md-5 ">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <p>Sun</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <p>Mon</p>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <p>Tue</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <p>Wed</p>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <p>Thu</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered sdate">
+                                                <p>Fri</p>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <p>Sat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row minif">
+                            <div class="col-md-2 ">
+                            </div>
+                            <div class="col-md-5 smini">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <p class="pfloat">GMT-05</p>
+                                            </div>
+                                            <div class="col-md-6 table-bordered">
+                                                &nbsp;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 smini">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered">
+                                                &nbsp;
+                                            </div>
+                                            <div class="col-md-6 table-bordered">
+                                                &nbsp;
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 smini">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered">
+                                                &nbsp;
+                                            </div>
+                                            <div class="col-md-6 table-bordered">
+                                                &nbsp;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered  sdate">
+                                                &nbsp;
+                                            </div>
+                                            <div class="col-md-6 table-bordered">
+                                                &nbsp;
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---- Divider ---->
+                        <div class="spacer">&nbsp;</div>
+                    </div>
+
+
+
+
+                    <div class="row">
+
+                        <div class="row">
+                            <div class="col-md-2  pusher"></div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col-md-6 table-bordered hfixg sdate">
+                                                        <p>12am-</br>8am</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg">
+                                                <hr style="border-top: dotted 1px;" />
+                                            </div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg sdate"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2  pusher"></div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col-md-6 table-bordered hfixg">
+                                                        <p>8am</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg sdate"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2  pusher"></div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col-md-6 table-bordered hfixg">
+                                                        <p>9am</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg  sdate"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2  pusher"></div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col-md-6 table-bordered hfixg">
+                                                        <p>10am</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg sdate"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2  pusher"></div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col-md-6 table-bordered hfixg">
+                                                        <p>11am</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg sdate"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2  pusher"></div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col-md-6 table-bordered hfixg">
+                                                        <p>12pm</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg sdate"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2  pusher"></div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col-md-6 table-bordered hfixg">
+                                                        <p>1pm</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg sdate"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2  pusher"></div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col-md-6 table-bordered hfixg">
+                                                        <p>2pm</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg sdate"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2  pusher"></div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col-md-6 table-bordered hfixg">
+                                                        <p>3pm</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg sdate"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2  pusher"></div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col-md-6 table-bordered hfixg">
+                                                        <p>4pm</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg sdate"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2  pusher"></div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col-md-6 table-bordered hfixg sdate">
+                                                        <p>5pm-</br>12pm</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6 table-bordered hfixg sdate"></div>
+                                            <div class="col-md-6 table-bordered hfixg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
