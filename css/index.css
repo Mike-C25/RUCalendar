@@ -81,8 +81,9 @@ body {
 .dropm {
     margin-top: 0px;
     position: relative;
-    left: 25px;
-    top: 6px;
+    left: -32px;
+    top: 6.5px;
+    float: right;
 }
 
 .dropm a {
@@ -91,24 +92,27 @@ body {
 }
 
 .dropm .dropdown-menu {
-    left: 460px;
     min-width: 80px;
     font-weight: bold;
     font-size: 12px;
     border-radius: .5px;
+    margin-left: -3px;
 }
 
 .dropm a:link {
     text-decoration: none;
-    background-color: transparent;
 }
 
 .dropm a:active {
     color: white;
 }
 
-.dropm a:focus,
-a:hover {
+.dropm a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.dropm a:hover {
     color: white;
     text-decoration: none;
 }
@@ -131,6 +135,7 @@ a:hover {
     background-color: transparent;
     line-height: 1.42857143;
     white-space: nowrap;
+    background-color: #3c3c3c;
 }
 
 .navbar-brand {
@@ -169,7 +174,7 @@ a {
     margin-left: 1px;
     vertical-align: middle;
     border-top: 3px dashed;
-    border-top: 4px solid\9;
+    border-top: 4px solid;
     border-right: 3px solid transparent;
     border-left: 3px solid transparent;
 }
@@ -207,8 +212,14 @@ a {
     display: inline-block;
 }
 
+.sinlin {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .rupos img {
-    margin-top: 1.5px;
+    margin-top: -59.5px;
 }
 
 .searchfix {
@@ -237,23 +248,6 @@ a {
     color: white;
 }
 
-.rupos .btn-default:focus,
-.btn-default:hover {
-    background-color: #4394f1;
-    background-position: 0 -15px;
-}
-
-.rupos .btn-default:hover {
-    color: #333;
-    background-color: #4394f1;
-    border-color: #207ce6;
-}
-
-.rupos .btn {
-    border-radius: 2px;
-    font-size: 12.75px;
-}
-
 .glyphicon {
     top: 0px;
 }
@@ -262,8 +256,9 @@ a {
     float: left;
     color: grey;
     font-style: normal;
-    margin: 22px -9px 0px 32px;
+    margin: 0px auto;
     font-size: 12px;
+    padding-top: 35px;
 }
 
 .inlin p {
@@ -271,11 +266,15 @@ a {
     margin-top: -7px;
 }
 
+.rusearch {
+    float: right;
+}
+
 .rubell {
     margin: 0px auto;
-    padding-top: 13px;
+    margin-left: 18px;
+    padding-top: 25px;
     padding-left: 0px;
-    float: right;
     color: grey;
     font-style: normal;
     font-size: 20px;
@@ -291,8 +290,8 @@ a {
 
 .ruright .input-group-btn {
     position: absolute;
-    padding-left: 65px;
-    margin-top: -15.5px;
+    padding-left: 10px;
+    margin-top: -24.5px;
     font-size: 0;
     white-space: nowrap;
 }
@@ -314,14 +313,14 @@ a {
 }
 
 .userpos {
-    left: 152px;
-    top: 11px;
     color: #cddaf0;
     background-color: #91addd;
     font-size: 24px;
     border-color: #b2bbcc;
     border-style: solid;
     border-width: thin;
+    left: 108px;
+    top: 2px;
 }
 
 
@@ -389,7 +388,7 @@ a {
 .datecolor p {
     color: black;
     padding-top: 6px;
-margin-left: -215px;
+    margin-left: -100px;
 }
 
 .datecolor p:hover {
@@ -528,6 +527,7 @@ margin-left: -215px;
 
 .createfloat {
     float: left;
+    padding-left: 10px;
 }
 
 
@@ -546,19 +546,24 @@ margin-left: -215px;
     margin: -14px;
 }
 
-
 .panel-heading .accordion-toggle:after {
     /* symbol for "opening" panels */
-    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
-    float: left;        /* adjust as needed */
-    color: black;         /* adjust as needed */
-    background-color:transparent;
+    font-family: 'Glyphicons Halflings';
+    /* essential for enabling glyphicon */
+    content: "\e114";
+    /* adjust as needed, taken from bootstrap.css */
+    float: left;
+    /* adjust as needed */
+    color: black;
+    /* adjust as needed */
+    background-color: transparent;
 }
+
 .panel-heading .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
-    background-color:transparent;
+    content: "\e080";
+    /* adjust as needed, taken from bootstrap.css */
+    background-color: transparent;
 }
 
 .calendarfixed .panel-default > .panel-heading {
@@ -568,8 +573,8 @@ margin-left: -215px;
 
 .calendarfixed .panel-default > .panel-heading {
     background-image: none;
-    background-repeat:none;
-    background-color:transparent;
+    background-repeat: none;
+    background-color: transparent;
 }
 
 .calendarfixed .panel-group .panel {
@@ -581,20 +586,20 @@ margin-left: -215px;
     margin-bottom: 20px;
     background-color: #FFF;
     border: 0px solid transparent;
-    border-radius:none ;
-    box-shadow:none ;
+    border-radius: none;
+    box-shadow: none;
 }
 
 .calendarfixed .panel-group .panel-heading + .panel-collapse > .panel-body {
     border-top: 0px solid #DDD;
 }
 
-.calendarfixed a:hover{
-    color:black;
+.calendarfixed a:hover {
+    color: black;
 }
 
-.calendarfixed a:active{
-    text-decoration:none;
+.calendarfixed a:active {
+    text-decoration: none;
 }
 
 .calendarfixed .panel-title {
@@ -602,5 +607,590 @@ margin-left: -215px;
     margin-bottom: 0px;
     font-size: 12px;
     color: inherit;
-    float:left;
+    float: left;
+}
+
+
+/*Broke the first page, onto the next!*/
+
+
+/*RUCALENDAR2.HTML*/
+
+
+/*BLACK NAV BAR*/
+
+.blknav {
+    border-radius: 0px;
+}
+
+
+/*HEADER/SEARCH SECTION*/
+
+.shead img {
+    float: left;
+}
+
+.shead form {
+    margin-left: 187px;
+    margin-right: -50px;
+    margin-top: -50px;
+    width: 100%;
+}
+
+.shead .userright {
+    margin-right: -245px;
+    margin-top: -5px;
+}
+
+.shead {
+    background-color: #f2f2f2;
+    border-bottom-style: solid;
+    border-bottom-color: gainsboro;
+    border-bottom-width: 1px;
+}
+
+.shead .searchbtn .btn {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-color: #4387FD;
+    display: inline-block;
+}
+
+.shead .searchbtn .btn-default {
+   padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 3.5px;
+    padding-top: 6px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-color: #4387FD;
+    box-shadow:none;
+    
+}
+
+.shead .searchbtn .btn-default .glyphicon-search {
+    margin-top: 3px;
+    font-size:14px;
+}
+
+
+/*CALENDAR NAV BAR*/
+
+.redcal {
+    margin: 14.5px auto;
+    padding-left: 25px;
+    color: #dd4b39;
+}
+
+.navcal p {
+    display: inline-block;
+}
+
+.navcal {
+    border-bottom-style: solid;
+    border-bottom-color: gainsboro;
+    border-bottom-width: 1px;
+}
+
+
+/*CALENDAR*/
+
+.cal {
+    padding-top: 10px;
+}
+
+.selectedf {
+    background-color: rgba(0, 0, 0, .075);
+    border-style: solid;
+    border-width: 1px;
+    border-bottom: .5px;
+    border-color: gainsboro;
+}
+
+.selected {
+    background-color: rgba(0, 0, 0, .075);
+}
+
+.week-set {
+    clear: both;
+}
+
+.timezone {
+    width: 60px;
+    float: left;
+    font-size: 11px;
+}
+
+.tz-holder {
+    width: 100%px;
+    margin-left: -60px;
+}
+
+.hour-row .day-col {
+    height: 41px;
+}
+
+.time-colf {
+    width: 60px;
+    height: 41px;
+    float: left;
+    border-style: solid;
+    border-color: gainsboro;
+    border-width: .5px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.time-coll {
+    width: 60px;
+    height: 41px;
+    float: left;
+    border-style: solid;
+    border-color: gainsboro;
+    border-width: .5px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.time-col {
+    width: 60px;
+    height: 41px;
+    float: left;
+    border-style: solid;
+    border-color: gainsboro;
+    border-width: .5px;
+    border-left-width: .5px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.timezone-row {
+    height: 15px;
+}
+
+.day-row .day-col {
+    text-align: center;
+    width: 12.7%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.timezone-row .day-col {
+    height: 15px;
+}
+
+.day-col {
+    width: 12.7%;
+    float: left;
+}
+
+.dlinecenter {
+    border-bottom-style: dotted;
+    border-width: .5px;
+    border-color: gainsboro;
+    margin-top: -20px;
+}
+
+.minical .panel-default>.panel-heading {
+    background-image: none;
+    background-color: white;
+    border-style: none;
+}
+
+.minical a {
+    color: black;
+    font-size: 12px;
+}
+
+.minical a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.minical a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.minical a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.minical .panel-default {
+    border-color: white;
+}
+
+.minical .panel {
+    border-color: white;
+    -webkit-box-shadow: none;
+}
+
+.minical .panel-group .panel-heading+.panel-collapse>.list-group,
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border: none;
+}
+
+.minical .panel-body {
+    font-size: 12px;
+}
+
+.navcal .btn {
+    background: #f5f5f5;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-image: -ms-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-image: -o-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+    border: 1px solid #dcdcdc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.todaybtn {
+    margin: 0px auto;
+    padding: 0px 8px;
+    min-height: 28px;
+}
+
+.todaybtn p {
+    margin: 0px auto;
+    padding: 0px;
+    color: rgba(0, 0, 0, 0.3);
+    ;
+}
+
+.massbuttonpadder {
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+}
+
+.massbuttonpadder p {
+    padding: 0px;
+    margin: 0px auto;
+    font-size: 12px;
+}
+
+.calsetpad {
+    padding-left: 6.5px;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid grey;
+    margin-left: 110px;
+    margin-bottom: 7px;
+}
+
+.padcreate {
+    padding-left: 40px;
+    padding-bottom: 15px;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.minical {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.minical .col-md-6 {
+    padding-right: 10.5px;
+    padding-left: 7.5px;
+}
+
+.minical .glyphbtn {
+    margin-top: 5px;
+    border: none;
+    font-size: 9px;
+    margin-left: -5px;
+    background-color: transparent;
+}
+
+.minical .glyphbtn:hover {
+    background-color: transparent;
+}
+
+.minibtnfix {
+    display: inline;
+    margin-left: 5px;
+}
+
+.minical .panel-title {
+    margin-right: -7.5px;
+}
+
+.minical .panel-heading .accordion-toggle.collapsed:after {
+    margin-left: 10px;
+    margin-top: 5px;
+    content: "\e250";
+    background-color: transparent;
+    font-size: 10px;
+}
+
+.minical .panel-heading .accordion-toggle:after {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: 'Glyphicons Halflings';
+    content: "\e252";
+    float: left;
+    color: black;
+    background-color: transparent;
+    font-size: 10px;
+}
+
+.minical .glyphicon {
+    font-size: 10px;
+}
+
+.minical a {
+    margin-left: 5px;
+}
+
+.minical .panel-heading {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.minical .panel-body {
+    margin: 0px auto;
+    padding-left: 25px;
+    margin-right: -17px;
+    margin-left: 0px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.minical .cal-collapse .panel-body {
+    margin: 0px auto;
+    padding-left: 0px;
+    margin-right: 7px;
+    margin-left: 9px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.minical .panel-body button {
+    background-image: none;
+    background-color: white;
+    border: none;
+    text-align: left;
+}
+
+.minical .panel-body button:hover {
+    background-image: none;
+    border: none;
+    text-align: left;
+    background-color: gainsboro;
+}
+
+.minidate {
+    font-size: 12px;
+    text-align: center;
+}
+
+.faded-date {
+    color: gray;
+}
+
+.abscal {
+    width: 245px;
+    position: absolute;
+}
+
+.lilcalpad {
+    margin-left: 250px;
+}
+
+.minical a:focus {
+    text-decoration: none;
+}
+
+.minical h4 {
+    height: 25px;
+}
+
+.minical h4:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.specialborder {
+    border: 1px solid gray;
+}
+
+.minical .minidrop .btn-default {
+    text-shadow: 0px 1px 0px #FFF;
+    border-color: #CCC;
+    background-image: none;
+    background-repeat: none;
+    box-shadow: none;
+}
+
+.minical .minidrop .btn {
+    float: right;
+    margin: -13.5px 5px -13px auto;
+    padding: 0px 5px 0px 0px;
+    height: 16px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.minical .minidrop .caret {
+    text-align: right;
+    margin-top: -5.5px;
+    margin-left: 3.0px;
+}
+
+.minical .panel-group {
+    margin-bottom: 0px;
+}
+
+.minical .panel {
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.minical .caretu {
+    margin-top: -4px;
+}
+
+.minical .dropdown-menu {
+    top: 2px;
+    left: 200px;
+    border-radius: 2px;
+}
+
+.minical .form-control {
+    height: 25px;
+    font-size: 12px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: -5px;
+    text-align: left;
+}
+
+.minical a:focus {
+    outline: medium none;
+    outline-offset: -2px;
+}
+
+.calsquare {
+    background: none repeat scroll 0% 0% #FFF;
+    border: 1px solid #DCDCDC;
+    border-radius: .5px;
+    height: 13px;
+    margin-right: 4px;
+    position: relative;
+    top: 2px;
+    width: 13px;
+    display: inline-block;
+}
+
+.calsquare-one {
+    background: none repeat scroll 0% 0% #9FE1E7;
+    border-color: #9FE1E7;
+}
+
+.calsquare-two {
+    background: none repeat scroll 0% 0% #9A9CFF;
+    border-color: #9A9CFF;
+}
+
+.calsquare-three {
+    background: none repeat scroll 0% 0% #9FC6E7;
+    border-color: #9FC6E7;
+}
+
+.calsquare-four {
+    background: none repeat scroll 0% 0% #9A9CFF;
+    border-color: #9A9CFF;
+}
+
+.create-add {
+    display: inline-block;
+}
+
+.create-add .btn-default {
+    text-shadow: 0px 1px 0px #FFF;
+    border-color: #CCC;
+    background-image: none;
+    background-repeat: no-repeat;
+    box-shadow: none;
+}
+
+.padcreate .btn-danger {
+    background-image: none;
+    background-repeat: no-repeat;
+    background: -moz-linear-gradient(center top, #DD4B39, #D14836) repeat scroll 0% 0% #D14836;
+    border-radius: 2px;
+}
+
+.padcreate .dropdown-menu {
+    width: 435%;
+    border-radius: 0px;
+}
+
+.padcreate .form-control {
+    height: 27px;
+    width: 350px;
+}
+
+.quickadd .btn-default {
+    background-image: none;
+    background-repeat: no-repeat;
+    background: -moz-linear-gradient(center top, #F5F5F5, #F1F1F1) repeat scroll 0% 0% #F5F5F5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background-color: #F5F5F5;
+}
+
+.addbtn {
+    margin: -1px auto;
+    margin-left: -44px;
+    padding: 0px 8px;
+    min-height: 28px;
+    min-width: 70px;
+    border-radius: 1px;
+}
+
+.addbtn p {
+    margin: 0px auto;
+    padding: 0px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.abscal .dropdown-menu .q-add-text {
+    font-size: 13px;
+    margin-top: 4px;
+    margin-left: 14px;
+    margin-bottom: -5px;
+}
+
+.example-text {
+    margin-left: 16px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    color: #888;
+    font-size: 11px;
+}
+
+.example-text p {
+    margin: 0px auto;
+}
+
+.other-cal-holiday {
+    margin: 0px auto;
+    padding: 0px;
+    margin-top: -10px;
 }

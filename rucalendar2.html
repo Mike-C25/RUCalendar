@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/script.js"></script>
+    <title>Rutgers University - Calendar</title>
+</head>
+
+<body>
+
+    <nav class="container-fluid navbar-inverse blknav">
+        <div class="navbar-header fontfix">
+            <a class="navbar-brand" href="#">+Andrew</a>
+            <a class="navbar-brand" href="#">Search</a>
+            <a class="navbar-brand" href="#">Images</a>
+            <a class="navbar-brand" href="#">Mail</a>
+            <a class="navbar-brand" href="#">Drive</a>
+            <a class="navbar-brand" href="#">Calendar</a>
+            <a class="navbar-brand" href="#">Sites</a>
+            <a class="navbar-brand" href="#">Group</a>
+            <a class="navbar-brand" href="#">Contacts</a>
+            <div class="dropm">
+                <ul class="fontfix">
+                    <li class="dropdown fontfix">
+                        <a class="dropdown-toggle brand fontfix" data-toggle="dropdown" href="#menu">More <span class="caret caretu"></span></a>
+                        <ul class="dropdown-menu navbar-inverse" role="menu" aria-labelledby="drop1">
+                            <li class="firstbackfix"><a class="navbar-brand fontfix" href="#">Photos</a></li>
+                            <li class="firstbackfix"><a class="navbar-brand fontfix" href="#">Apps</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <header class="container-fluid shead">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/images/rulogo.png" />
+                <form class="navbar-form navbar-left searchbtn" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control noborrad" placeholder="Search Calendar">
+                    </div>
+                  
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" style="color:white;" area-hidden="true"></span></button>
+                    
+                    
+                </form>
+            </div>
+
+            <div class="col-md-6 userright pull-right">
+                <div class="inlin ruleft">
+                    <p>mc1340@scarletmail.rutgers.edu</p>
+                </div>
+                <div class="inlin rubell">
+                    <span class="glyphicon glyphicon-bell" area-hidden="true"></span>
+                </div>
+                <div class="inlin ruright">
+                    <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" style="display:inline-block" ><span class="glyphicon glyphicon-plus"></span>Share</button>
+                    </span>
+                </div>
+                <div class="inlin rurightr">
+                    <div class="inlin rurightr">
+                        <span class="glyphicon glyphicon-user userpos"></span>
+                    </div>
+                    <div class="arrow-down inlin"></div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <nav class="container-fluid navcal">
+        <div class="row">
+            <div class="col-md-2">
+                <h4 class="redcal">Calendar</h4>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-5 pull-left massbuttonpadder">
+                        <button type="button" class="btn btn-default todaybtn" aria-label="Left Align">
+                            <p>Today</p>
+                        </button>
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default "><span class="glyphicon glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+                            <button type="button" class="btn btn-default "><span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+                        </div>
+                        <p>Feb 7 - 13, 2016</p>
+                    </div>
+
+                    <div class="col-md-7 text-right massbuttonpadder" style="display:inline-block;">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default calbuttons">
+                                <p>Day</p>
+                            </button>
+                            <button type="button" class="btn btn-default calbuttons">
+                                <p>Week</p>
+                            </button>
+                            <button type="button" class="btn btn-default calbuttons">
+                                <p>Month</p>
+                            </button>
+                            <button type="button" class="btn btn-default calbuttons">
+                                <p>4 Weeks</p>
+                            </button>
+                            <button type="button" class="btn btn-default calbuttons">
+                                <p>Agenda</p>
+                            </button>
+                        </div>
+
+                        <div class="dropdown calsetpad pull-right">
+                            <button class="btn btn-default calbuttons dropdown-toggle" type="button" data-toggle="dropdown">
+                                <p>More <span class="caret"></span></p>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Print</a></li>
+                                <li><a href="#">Refresh</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="dropdown calsetpad pull-right">
+                            <button class="btn btn-default dropdown-toggle settingbutton" type="button" data-toggle="dropdown">
+                                <span class="settingset glyphicon glyphicon-cog "></span><span class="caret settingcaret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Display Density</a></li>
+                                <li><a href="#">Refresh</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid cal">
+        <div class="row">
+
+            <aside class="col-md-2 abscal">
+                <div class="row padcreate">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger ">CREATE</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <p class="q-add-text">Quick Add</p>
+                            <form class="navbar-form navbar-left" role="search">
+                                <div>
+                                    <div class="row quickadd">
+                                        <div class="col-md-11 pull-left">
+                                            <div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control noborrad pull-left" placeholder="&nbsp;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1 pull-right">
+                                            <button type="button" class="btn btn-default addbtn" aria-label="Left Align">
+                                                <p>Add</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="example-text"><p>Example: Dinner with Michael 7pm tomorrow</p></div>
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row minical">
+                    <div class="panel-group" id="accordian">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"  href="#collapseOne">
+                                        February 2016
+                                    </a>
+                                        <button class="glyphicon glyphbtn glyphicon-chevron-right pull-right"></button>
+                                        <button class="glyphicon glyphbtn glyphicon-chevron-left pull-right"></button>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapsed collapse cal-collapse" aria-expanded="true" aria-labelledby="collapseOne">
+                                <div class="panel-body">
+
+                                    <div class="row s-to-f">
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">&nbsp;</div>
+                                                <div class="col-md-6">S</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">M</div>
+                                                <div class="col-md-6">T</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">W</div>
+                                                <div class="col-md-6">T</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">F</div>
+                                                <div class="col-md-6">S</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row minidate">
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">&nbsp;</div>
+                                                <div class="col-md-6">31</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">1</div>
+                                                <div class="col-md-6">2</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">3</div>
+                                                <div class="col-md-6">4</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">5</div>
+                                                <div class="col-md-6">6</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row minidate">
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">&nbsp;</div>
+                                                <div class="col-md-6 selected">7</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6 selected">8</div>
+                                                <div class="col-md-6 selected">9</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6 selected">10</div>
+                                                <div class="col-md-6 selected specialborder">11</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6 selected">12</div>
+                                                <div class="col-md-6 selected">13</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row minidate">
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">&nbsp;</div>
+                                                <div class="col-md-6">14</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">15</div>
+                                                <div class="col-md-6">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">17</div>
+                                                <div class="col-md-6">18</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">19</div>
+                                                <div class="col-md-6">20</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row minidate">
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">&nbsp;</div>
+                                                <div class="col-md-6">21</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">22</div>
+                                                <div class="col-md-6">23</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">24</div>
+                                                <div class="col-md-6">25</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">26</div>
+                                                <div class="col-md-6">27</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row minidate">
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">&nbsp;</div>
+                                                <div class="col-md-6">28</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">29</div>
+                                                <div class="col-md-6 faded-date">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6 faded-date">2</div>
+                                                <div class="col-md-6 faded-date">3</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6 faded-date">4</div>
+                                                <div class="col-md-6 faded-date">5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row minidate">
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6">&nbsp;</div>
+                                                <div class="col-md-6 faded-date">6</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6 faded-date">7</div>
+                                                <div class="col-md-6 faded-date">8</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6 faded-date">9</div>
+                                                <div class="col-md-6 faded-date">10</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-6 faded-date">11</div>
+                                                <div class="col-md-6 faded-date">12</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row minical">
+                    <div class="panel-group" id="accordian">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"  href="#collapseTwo">
+                                        My Calendar
+                                    </a>
+                                    <div class="dropdown minidrop">
+                                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        
+                                        <a class="caretu"></a>
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <li><a href="#">Create new calendar</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                        
+                                      </ul>
+                                    </div>
+
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapsed collapse" aria-expanded="false" aria-labelledby="collapseTwo">
+                                <div class="panel-body">
+
+                                    <div style="background-color: black">
+                                        <button style="display: block; width: 100%;">
+                                            <div class="calsquare calsquare-one"></div>Mike C</button>
+                                    </div>
+
+
+                                    <div style="background-color: black">
+                                        <button style="display: block; width: 100%;">
+                                            <div class="calsquare calsquare-two"></div>Jimmy T</button>
+                                    </div>
+
+                                    <div style="background-color: black">
+
+                                        <button style="display: block; width: 100%;">
+                                            <div class="calsquare calsquare-three"></div>Timmy Z</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row minical">
+                    <div class="panel-group" id="accordian">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" href="#collapseThree">
+                                        Other Calendars
+                                    </a>
+                                   <div class="dropdown minidrop">
+                                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        
+                                        <a class="caretu"></a>
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <li><a href="#">Add a friend's calendar</a></li>
+                                        <li><a href="#">Browse Interesting Calendars</a></li>
+                                        <li><a href="#">Add by URL</a></li>
+                                        <li ><a href="#">Import calendar</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                      </ul>
+                                      
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapsed collapse" aria-expanded="false" aria-labelledby="collapseThree">
+                                <div class="panel-body">
+                                    <form role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control noborrad" placeholder="Add a friend's calendar">
+                                        </div>
+                                    </form>
+                                    <div class="other-cal-holiday">
+                                          <div style="background-color: black">
+                                        <button style="display: block; width: 100%;">
+                                            <div class="calsquare calsquare-four"></div>Holidays in U.S.</button>
+                                    </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+
+
+            <main class="col-md-10 lilcalpad">
+                <div class="row">
+                    <div class="col-md-12 week-set">
+
+                        <div class="row day-row">
+                            <div class="timezone">&nbsp;</div>
+                            <div class="tz-holder">
+                                <div class="day-col">Sun 2/7</div>
+                                <div class="day-col">Mon 2/8</div>
+                                <div class="day-col">Tue 2/9</div>
+                                <div class="day-col">Wed 2/10</div>
+                                <div class="day-col">Thu 2/11</div>
+                                <div class="day-col selectedf">Fri 2/12</div>
+                                <div class="day-col">Sat 2/13</div>
+                            </div>
+                        </div>
+
+                        <div class="row timezone-row">
+                            <div class="timezone text-center">GMT-05</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">&nbsp;</div>
+                                <div class="day-col table-bordered">&nbsp;</div>
+                                <div class="day-col table-bordered">&nbsp;</div>
+                                <div class="day-col table-bordered">&nbsp;</div>
+                                <div class="day-col table-bordered">&nbsp;</div>
+                                <div class="day-col selected table-bordered">&nbsp;</div>
+                                <div class="day-col table-bordered">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        <div class="spacer"></div>
+
+                        <div class="row hour-row">
+                            <div class="time-colf selected">12am-</br>8am</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">&nbsp;</div>
+                                <div class="day-col table-bordered">&nbsp;</div>
+                                <div class="day-col table-bordered">&nbsp;</div>
+                                <div class="day-col table-bordered">&nbsp;</div>
+                                <div class="day-col table-bordered">&nbsp;</div>
+                                <div class="day-col selected table-bordered">&nbsp;</div>
+                                <div class="day-col table-bordered">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        <div class="row hour-row">
+                            <div class="time-col">8am</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col selected table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hour-row">
+                            <div class="time-col">9am</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col selected table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hour-row">
+                            <div class="time-col">10am</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col selected table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hour-row">
+                            <div class="time-col">11am</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col selected table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hour-row">
+                            <div class="time-col">12pm</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col selected table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hour-row">
+                            <div class="time-col">1pm</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col selected table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hour-row">
+                            <div class="time-col">2pm</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col selected table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hour-row">
+                            <div class="time-col">3pm</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col selected table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hour-row">
+                            <div class="time-col">4pm</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col selected table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hour-row">
+                            <div class="time-coll selected">5pm-</br>12pm</div>
+                            <div class="tz-holder">
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col selected table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                                <div class="day-col table-bordered">
+                                    <div class="dlinecenter"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </main>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
